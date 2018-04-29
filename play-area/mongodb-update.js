@@ -26,7 +26,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
             name: 'Rajak'
         },
         $inc: {
-            age: 2
+            age: 2 //increments the existing value by 2, can also use -1, that will minus 1 every time the app runs
         }
     }, {
         returnOriginal: false
